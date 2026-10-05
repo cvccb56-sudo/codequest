@@ -1,0 +1,3 @@
+package com.codequest;
+import jakarta.persistence.*;
+@Entity @Table(name="players") public class Player { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @Column(unique=true,nullable=false) public String username; public String passwordHash; public String photoUrl; public int level=1; public int xp=0; public int coins=0; public int dailyXp=0; public String title="Code Recruit"; public String badges=""; }
